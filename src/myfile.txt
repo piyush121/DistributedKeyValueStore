@@ -1,1 +1,0 @@
-Result(value:3, error:kSuccess, errortext:Pair fetched successfully.)
