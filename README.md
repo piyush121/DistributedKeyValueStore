@@ -23,8 +23,11 @@ java -cp ".:./Referenced_Libraries/slf4j-simple-1.7.21.jar:./Referenced_Librarie
 
 You can connect the client to a different server by passing command line arguments.
 The client has three subcommands:
+
 get - Example: ./kvclient -server host:port -get 'my_key' > my_value_file
+
 set - Example: ./kvclient -server host:port -set 'my_key' 'my_value'
+
 del - Example: ./kvclient -server host:port -del 'my_key'
 
 
