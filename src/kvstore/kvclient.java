@@ -18,7 +18,9 @@ public class kvclient {
 
 	public static void main(String[] args) {
 		try {
-			transport = new TSocket(HOST, PORT);
+			HOST = args[1].split(":")[0];
+			PORT = Integer.parseInt(args[1].split(":")[1]);
+			transport = new TSocket(HOST, PORT, 5000);// Will timeout after 5 secs.
 			transport.open();
 			protocol = new TBinaryProtocol(transport);
 			client = new KVStore.Client(protocol);
@@ -26,7 +28,7 @@ public class kvclient {
 			int length = args.length;
 			Result result = null;
 			switch (length) {
-
+			
 			// either get or delete
 			case 4:
 				if (args[2].equals("-get")) {
@@ -55,7 +57,7 @@ public class kvclient {
 					}
 				}
 				break;
-			case 5:
+			case 5: // set command sent.
 				if (args[2].equals("-set")) {
 					result = client.kvset(args[3], args[4]);
 					if (result.getError() == ErrorCode.kSuccess) {
