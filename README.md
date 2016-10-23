@@ -1,5 +1,5 @@
 # DistributedKeyValueStore Version - 1
-
+In-Class Project
 -----Distributed Key Value storage system based on Apache Thrift-----
 
 Refrenced Libraries :
