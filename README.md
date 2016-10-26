@@ -5,6 +5,9 @@ In-Class Project
 Refrenced Libraries :
 
 Thrift - 0.9.3
+
+JAVA 1.8
+
 SLF4J - 1.7.21
 
 To compile just type:
