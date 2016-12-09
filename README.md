@@ -1,4 +1,4 @@
-# DistributedKeyValueStore Version - 1(Non-Persistent)
+# DistributedKeyValueStore (Non-Persistent)
 In-Class Project
 -----Distributed Key Value storage system based on Apache Thrift-----
 
